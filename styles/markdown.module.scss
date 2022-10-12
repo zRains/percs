@@ -1,0 +1,196 @@
+.PostMarkdownContent {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 26px;
+}
+
+.PostMarkdownContent > *:first-child {
+  margin-top: 0;
+}
+
+/**
+ * Headings
+ * -------------------------------------------------------------------------- */
+
+.PostMarkdownContent h1,
+.PostMarkdownContent h2,
+.PostMarkdownContent h3,
+.PostMarkdownContent h4,
+.PostMarkdownContent h5,
+.PostMarkdownContent h6 {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.PostMarkdownContent h1 {
+  font-size: 2rem;
+}
+
+.PostMarkdownContent h2 {
+  font-size: 1.5rem;
+}
+
+.PostMarkdownContent h3 {
+  font-size: 1.25rem;
+}
+
+.PostMarkdownContent h4 {
+  font-size: 1rem;
+}
+
+.PostMarkdownContent h5 {
+  font-size: 0.875rem;
+}
+
+.PostMarkdownContent h6 {
+  font-size: 0.85rem;
+}
+
+.PostMarkdownContent .header-anchor {
+  display: none;
+}
+
+.PostMarkdownContent h1:hover .header-anchor,
+.PostMarkdownContent h1 .header-anchor:focus,
+.PostMarkdownContent h2:hover .header-anchor,
+.PostMarkdownContent h2 .header-anchor:focus,
+.PostMarkdownContent h3:hover .header-anchor,
+.PostMarkdownContent h3 .header-anchor:focus,
+.PostMarkdownContent h4:hover .header-anchor,
+.PostMarkdownContent h4 .header-anchor:focus,
+.PostMarkdownContent h5:hover .header-anchor,
+.PostMarkdownContent h5 .header-anchor:focus,
+.PostMarkdownContent h6:hover .header-anchor,
+.PostMarkdownContent h6 .header-anchor:focus {
+  opacity: 1;
+}
+
+/**
+  * Paragraph and inline elements
+  * -------------------------------------------------------------------------- */
+
+.PostMarkdownContent p,
+.PostMarkdownContent summary {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.PostMarkdownContent blockquote {
+  margin: 0 0 16px 0;
+  border-left: 0.25em solid var(--c-divider);
+  padding-left: 16px;
+  transition: border-color var(--u-dur) ease;
+}
+
+.PostMarkdownContent blockquote > p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--c-text-2);
+  transition: color var(--u-dur) ease;
+}
+
+.PostMarkdownContent a {
+  position: relative;
+  display: inline-flex;
+  padding: 0 var(--u-gap);
+  font-weight: 700;
+  color: inherit;
+
+  strong {
+    padding-right: 0;
+    text-decoration: none;
+  }
+}
+
+.PostMarkdownContent strong {
+  padding: 0 calc(var(--u-gap) * 0.5);
+  font-weight: 700;
+  text-decoration: var(--c-text-1) wavy underline;
+  text-underline-offset: 2px;
+}
+
+.PostMarkdownContent img {
+  max-width: 100%;
+}
+
+/**
+  * Lists
+  * -------------------------------------------------------------------------- */
+
+.PostMarkdownContent ul,
+.PostMarkdownContent ol {
+  padding-left: 1.25rem;
+  margin: 16px 0;
+}
+
+.PostMarkdownContent ul {
+  list-style: disc;
+}
+
+.PostMarkdownContent ol {
+  list-style: decimal;
+}
+
+.PostMarkdownContent li + li {
+  margin-top: 8px;
+}
+
+.PostMarkdownContent li > ol,
+.PostMarkdownContent li > ul {
+  margin: 8px 0 0;
+}
+
+/**
+  * Table
+  * -------------------------------------------------------------------------- */
+
+.PostMarkdownContent table {
+  display: block;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  line-height: 20px;
+  overflow: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.PostMarkdownContent tr {
+  border-top: 1px solid var(--c-divider);
+  transition: background-color var(--u-dur) ease;
+}
+
+.PostMarkdownContent tr:nth-child(2n) {
+  background-color: var(--c-bg-soft);
+}
+
+.PostMarkdownContent th,
+.PostMarkdownContent td {
+  padding: 8px 13px;
+  border: 1px solid var(--c-divider);
+}
+
+.PostMarkdownContent th {
+  font-weight: 600;
+}
+
+.dark .PostMarkdownContent th {
+  background-color: var(--c-black);
+}
+
+/**
+  * Decorational elements
+  * -------------------------------------------------------------------------- */
+
+.PostMarkdownContent hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid var(--c-divider-light);
+}
+
+.PostMarkdownContent small {
+  display: block;
+  margin: 20px 0;
+}
