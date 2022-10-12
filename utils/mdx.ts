@@ -8,7 +8,7 @@ export function mdx(category: string) {
   const mdxMap: Map<string, string> = new Map()
 
   // init mdx category
-  sync(`${mdxPath}/*.mdx`).forEach((path) => {
+  sync(`${mdxPath}/*.+(mdx|md)`).forEach((path) => {
     const [slug, _extension] = path.split('/').pop()!.split('.')
 
     mdxMap.set(slug, path)
