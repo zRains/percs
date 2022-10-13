@@ -5,8 +5,6 @@ visible: true
 lang: 'zh'
 ---
 
-### 一些有用的 Linux 命令
-
 防止别人 ping 你的服务器
 
 ```bash
