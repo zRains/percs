@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function MdLink({ children, href = '' }: JSX.IntrinsicElements['a']) {
   return (
     <Link href={href} passHref prefetch={false}>
-      <a className="MdLink">
+      <a className="MdLink" target={'_blank'}>
         {children}
 
         <svg
