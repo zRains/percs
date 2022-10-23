@@ -44,6 +44,13 @@ export const SITE_CONFIG: SiteConfig = {
           repo: 'https://github.com/zRains/Gradientor',
           preview: 'https://gradientors.netlify.app/',
         },
+        {
+          icon: '/project/count1024.svg',
+          name: 'Count1024',
+          desc: 'Calculate the probability of all 1024 combinations',
+          repo: 'https://github.com/zRains/count1024',
+          preview: 'https://count1024.vercel.app/',
+        },
       ],
     },
   ],

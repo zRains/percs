@@ -85,15 +85,13 @@ export interface SiteConfig {
   projects: [
     {
       category: string
-      items: [
-        {
-          icon: string
-          name: string
-          desc?: string
-          preview?: string
-          repo?: string
-        },
-      ]
+      items: {
+        icon: string
+        name: string
+        desc?: string
+        preview?: string
+        repo?: string
+      }[]
     },
   ]
 }
