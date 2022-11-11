@@ -17,9 +17,7 @@ const PRNavTitleStyled = styled.div`
 export default function PRNavTitle() {
   return (
     <PRNavTitleStyled>
-      <Link href={'/'}>
-        <a className="NavTitleLogo" style={{ backgroundImage: `url('${SITE_CONFIG.logo}')` }}></a>
-      </Link>
+      <Link className="NavTitleLogo" href={'/'} style={{ backgroundImage: `url('${SITE_CONFIG.logo}')` }} />
     </PRNavTitleStyled>
   )
 }

@@ -31,9 +31,7 @@ export default function PRDropGroupItem({ label, items }: Props) {
         {items.map((item) => (
           <li className="GroupItem" key={JSON.stringify(item)}>
             <PRDropItem>
-              <Link href={item.href}>
-                <a>{item.text}</a>
-              </Link>
+              <Link href={item.href}>{item.text}</Link>
             </PRDropItem>
           </li>
         ))}

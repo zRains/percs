@@ -81,10 +81,12 @@ function Difficulty({ difficulty, color, challenges }: DifficultyProps) {
       </div>
       <div className="ChallengesBox">
         {challenges.map((challenge) => (
-          <Link href={`/wraps/type_challenge/${challenge.slug}`} key={challenge.slug}>
-            <a style={{ backgroundColor: color }}>
-              {challenge.frontmatter.order}. {challenge.frontmatter.title}
-            </a>
+          <Link
+            href={`/wraps/type_challenge/${challenge.slug}`}
+            key={challenge.slug}
+            style={{ backgroundColor: color }}
+          >
+            {challenge.frontmatter.order}. {challenge.frontmatter.title}
           </Link>
         ))}
       </div>

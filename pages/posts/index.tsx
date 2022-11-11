@@ -148,10 +148,8 @@ const PostsIndexPage: NextPageWithLayout<Props> = ({ posts }) => {
         {myPosts.slice(0, pageSize * page).map((post) => {
           return (
             <li className="PostItem" key={post.slug}>
-              <Link href={`/posts/${post.slug}`} passHref>
-                <a className="PostItemLink">
-                  <h3 className="PostTitle ClearMP">{post.frontmatter.title as string}</h3>
-                </a>
+              <Link className="PostItemLink" href={`/posts/${post.slug}`}>
+                <h3 className="PostTitle ClearMP">{post.frontmatter.title}</h3>
               </Link>
               <p className="PostInfo ClearMP">
                 {dayjs(post.frontmatter.date as number).format('MMMM D, YYYY')}

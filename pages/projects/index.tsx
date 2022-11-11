@@ -52,14 +52,17 @@ const ProjectsIndexPage: NextPageWithLayout = () => {
             <h2 className="ProjectCategoryName ClearMP">{categories.category}</h2>
             <div className="ProjectContainer">
               {categories.items.map((project) => (
-                <Link href={project.preview || project.repo || ''} key={project.name}>
-                  <a className="ProjectItem" target={'_blank'}>
-                    <Image className="ProjectIcon" src={project.icon} height={40} width={40} alt={project.name} />
-                    <div className="ProjectDetails">
-                      <div className="ProjectName">{project.name}</div>
-                      <div className="ProjectDesc">{project.desc}</div>
-                    </div>
-                  </a>
+                <Link
+                  className="ProjectItem"
+                  href={project.preview || project.repo || ''}
+                  target={'_blank'}
+                  key={project.name}
+                >
+                  <Image className="ProjectIcon" src={project.icon} height={40} width={40} alt={project.name} />
+                  <div className="ProjectDetails">
+                    <div className="ProjectName">{project.name}</div>
+                    <div className="ProjectDesc">{project.desc}</div>
+                  </div>
                 </Link>
               ))}
             </div>

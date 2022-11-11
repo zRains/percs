@@ -187,10 +187,8 @@ const NotesIndexPage: NextPageWithLayout<Props> = ({ notes }) => {
         {myNotes.slice(0, pageSize * page).map((note) => {
           return (
             <li className={cn(['NoteItem', { active: hash === note.slug }])} key={note.slug}>
-              <Link href={`#${note.slug}`}>
-                <a className="NoteTitle ClearMP" id={note.slug}>
-                  {note.frontmatter.title as string}
-                </a>
+              <Link className="NoteTitle ClearMP" href={`#${note.slug}`} id={note.slug}>
+                {note.frontmatter.title}
               </Link>
               <p className="NoteInfo ClearMP">{dayjs(note.frontmatter.date as number).format('MMMM D, YYYY')}</p>
               <MdContent source={note.content} />
